@@ -33,6 +33,7 @@ public class Studente {
 		
 		return promosso;
 	}
+	
 		
 		
 	
