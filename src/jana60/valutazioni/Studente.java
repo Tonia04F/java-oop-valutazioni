@@ -21,15 +21,16 @@ public class Studente {
 	
 	boolean pagella() {
 		boolean promosso = false;
-		if(percAssenze < 20 && mediaVoti >=6.5) {
+		if(percAssenze < 25 && mediaVoti >=2) {
 			promosso=true;
 		}
-		else if(percAssenze < 20 && mediaVoti <= 5.5) {
+		else if(percAssenze < 50 && mediaVoti > 2) {
+			promosso=true;
+		}
+		else {
 			promosso=false;
 		}
-		else if(percAssenze > 20 && mediaVoti >=6.5) {
-			promosso = false;
-		}
+		
 		return promosso;
 	}
 		
